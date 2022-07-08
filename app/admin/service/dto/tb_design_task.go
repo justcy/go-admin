@@ -38,7 +38,7 @@ type DesignTaskInsertReq struct {
     Tags string `json:"tags" comment:"任务标签"`
     Comment string `json:"comment" comment:"任务备注"`
     Params string `json:"params" comment:"任务限制参数"`
-    Status string `json:"status" comment:"任务状态 0 等待处理 1 处理完成待交付 2 已交付 "`
+    Status string `json:"status" comment:"任务状态 "`
     common.ControlBy
 }
 
@@ -66,7 +66,7 @@ type DesignTaskUpdateReq struct {
     Tags string `json:"tags" comment:"任务标签"`
     Comment string `json:"comment" comment:"任务备注"`
     Params string `json:"params" comment:"任务限制参数"`
-    Status string `json:"status" comment:"任务状态 0 等待处理 1 处理完成待交付 2 已交付 "`
+    Status string `json:"status" comment:"任务状态 "`
     common.ControlBy
 }
 

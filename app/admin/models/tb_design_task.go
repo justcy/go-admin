@@ -1,7 +1,6 @@
 package models
 
-import ("time"
-
+import (
 	"go-admin/common/models"
 
 )
@@ -14,7 +13,7 @@ type DesignTask struct {
     Tags string `json:"tags" gorm:"type:varchar(128);comment:任务标签"` 
     Comment string `json:"comment" gorm:"type:varchar(128);comment:任务备注"` 
     Params string `json:"params" gorm:"type:text;comment:任务限制参数"` 
-    Status string `json:"status" gorm:"type:int;comment:任务状态 0 等待处理 1 处理完成待交付 2 已交付 "` 
+    Status string `json:"status" gorm:"type:int;comment:任务状态 "` 
     models.ModelTime
     models.ControlBy
 }
